@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    transform:scale(1);
+	transition: all 100ms ease-in-out;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+.vaca {
+    width: 25%;
+    position: relative;
+    margin-top: 330px;
+    transition: transform .2s;
+}
+
+.gallina {
+    width: 11%;
+    position: relative;
+    margin-bottom: 80px;
+    margin-left: 350px;
+    transition: transform .2s;
+}
+
+.vaca:hover {
+    transform: scale(1.5);
+}
+
+
+.gallina:hover {
+    transform: scale(1.5);
+}
+
+.contenedor:hover {
+    transform:scale(.95);
+    border: 5px solid blue; 
+}
+
+.titulo {
+    border: 5px solid green;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.titulo:hover {
+    background: skyblue;
+  }
+
+.titulo p {
+    transform: translateY(-300px);
+  }
+
+p {
+    transition: .3s;
+    font-size: 48px;
+    color: green;
+}
+
+.titulo:hover p {
+    transform: translateY(0);
+  }
